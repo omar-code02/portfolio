@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+*{
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-style: none;
+    background-color: #313944;
+   transition: scroll;
+ }
+ .nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: scroll-transition;
+    animation-timeline: scroll(y);
+    
+ }
+ @keyframes scroll-transition{
+    0%{
+        
+    }
+    100%{
+        background-color: #3f4855;
+        opacity: 90%;
+    }
+ }
+ .logo {
+  font-family: "Jim Nightshade", cursive;
+  margin-left: 20px;
+  font-size: 40px;
+ color: aliceblue;
+    
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+li{
+    margin-right: 50px;
+    
+    transition: .5s;
+}
+li a{
+    text-decoration: none; color: aliceblue;
+    
+}
+
+li a:hover{
+    color: rgb(137, 214, 172);
+}
+.about{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aboutinfo{
+
+}
+.aboutinfo h1{
+    color: aliceblue;
+}
+.aboutinfo h2{
+    color: aliceblue;
+    margin-left: 10px;
+}
+.aboutinfo p{
+    color: aliceblue;
+    margin-left: 20px;
+}
+.aboutinfo h2 span{
+    color: rgb(137, 214, 172);
+    
+}
+.aboutimg img{
+    width: 500px;
+    height: 500px;
+    
+}
+.acc a  {
+    margin-left:20px ;
+}
+hr{
+    
+    border-top: 5px solid rgb(137, 214, 172);
+
+}
+.myj{
+    height: 80vh;
+    
+    align-items: center;
+}
+.myj h1{
+   
+    text-align: center;
+    color: rgb(137, 214, 172);
+}
+
+.timeline{
+    border: 2px solid rgb(137, 214, 172);
+    margin: 0 20px;
+    padding: 0px;
+    height: 100px;
+    width: 40%;
+    border-radius: 10px;
+    transition: .5s;
+}
+.timeline:hover{
+    border: 2px solid rgb(137, 214, 172);
+    margin: 0 20px;
+    padding: 0px;
+    height: 100px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgb(123, 190, 154);
+}
+
+
+.timeline::after{
+    content: '';
+    background-color: 
+     rgb(137, 214, 172);
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    height: 65vh;
+    width: 2px;
+    
+}
+.timeline h2{
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    
+}
+.icons i{
+    
+}
+.timeline:nth-child(even){
+    
+    margin-left: auto;
+}
+.why{
+    
+}
+.why h1{
+    color: 
+     rgb(137, 214, 172);
+     text-align: center;
+}
